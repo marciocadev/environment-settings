@@ -160,7 +160,9 @@ $ npm -v
 Caso necessite do Volta execute o comando e configure a versão padrão no node
 ```shell
 $ curl https://get.volta.sh | bash
+
 $ volta install node@22.11.0
+
 $ volta -v
 2.0.1
 ```
