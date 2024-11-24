@@ -162,10 +162,11 @@ $ volta install node@22.11.0
 ## Instalando o Rust
 
 Para instalar o `rust` execute o commando abaixo
-```shell
+```bash
 $ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 Para verificar a versão
 ```shell
 $ rustc --version
+rustc 1.82.0 (f6e511eec 2024-10-15)
 ```
