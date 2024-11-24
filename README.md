@@ -59,6 +59,7 @@ $ echo \
   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
   $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
 $ sudo apt-get update
 ```
 
@@ -150,19 +151,24 @@ Verificando as versões
 
 ```shell
 $ node -v
+v22.11.0
+
 $ npm -v
+10.9.0
 ```
 
 Caso necessite do Volta execute o comando e configure a versão padrão no node
 ```shell
 $ curl https://get.volta.sh | bash
 $ volta install node@22.11.0
+$ volta -v
+2.0.1
 ```
 
 ## Instalando o Rust
 
 Para instalar o `rust` execute o commando abaixo
-```bash
+```shell
 $ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 Para verificar a versão
