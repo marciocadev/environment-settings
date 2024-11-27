@@ -21,7 +21,7 @@ PS> wsl --unregister Ubuntu-24.04
 # Dependencias úteis
 
 ```shell
-sudo apt install unzip
+$ sudo apt install unzip
 ```
 
 # Configurando o shell
