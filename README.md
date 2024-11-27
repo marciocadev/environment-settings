@@ -18,6 +18,13 @@ ou de uninstall com o comando
 PS> wsl --unregister Ubuntu-24.04
 ```
 
+Find out which instance of WSL is running
+wsl -l --running
+Terminate all running instances of WSL
+wsl --shutdown
+Then simply restart WSL
+wsl 
+
 # Dependencias úteis
 
 ```shell
