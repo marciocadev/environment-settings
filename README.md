@@ -1,5 +1,7 @@
 # Instalando um linux no WSL
 
+> Abra o Powershell como *administrador*
+
 Primeiro verificamos pello Powershell se temos uma instalação do Ubuntu instalaado no WSL
 
 ```powershell
@@ -18,12 +20,23 @@ ou de uninstall com o comando
 wsl --unregister Ubuntu-24.04
 ```
 
-Find out which instance of WSL is running
+Para descobrir qual instância está em execução
+
+```powershell
 wsl -l --running
-Terminate all running instances of WSL
+```
+
+Encerrar todas as intâncias
+
+```powershell
 wsl --shutdown
-Then simply restart WSL
-wsl 
+```
+
+Iniciar as instâncias
+
+```powershell
+wsl
+```
 
 # Dependencias úteis
 
