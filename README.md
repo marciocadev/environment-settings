@@ -209,3 +209,14 @@ Para verificar a versão
 ```shell
 rustc --version
 ```
+
+## Instalando o Go
+
+Para instalar `golang` execute o comando
+```shell
+sudo apt install golang
+```
+Para verificar a versão
+```shell
+go version
+```
