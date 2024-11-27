@@ -12,6 +12,12 @@ Se não tiver a versão que vc deseja, instale com o comando
 PS> wsl --install -d Ubuntu-24.04
 ```
 
+ou de uninstall com o comando
+
+```powershell
+PS> wsl --uninstall -d Ubuntu-24.04
+```
+
 # Configurando o shell
 
 Instale o `oh-my-posh` com o comando
