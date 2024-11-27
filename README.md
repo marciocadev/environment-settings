@@ -167,6 +167,7 @@ O `Ubuntu 24.04` já vem instalado com o `python 3.12.3`
 
 ## Instalando o Node
 
+<!---
 Para instalar o `node v22.11.0` e `npm 10.9.0`, instale o `nvm` conforme abaixo
 
 ```shell
@@ -185,12 +186,15 @@ Verificando as versões
 node -v
 npm -v
 ```
+--->
 
 Caso necessite do Volta execute o comando e configure a versão padrão no node
 ```shell
 curl https://get.volta.sh | bash
 
 volta install node@22.11.0
+# ou
+volta install node@20.18.1
 
 volta -v
 ```
