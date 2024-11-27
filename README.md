@@ -18,6 +18,12 @@ ou de uninstall com o comando
 PS> wsl --unregister Ubuntu-24.04
 ```
 
+# Dependencias úteis
+
+```shell
+sudo apt install unzip
+```
+
 # Configurando o shell
 
 Instale o `oh-my-posh` com o comando
