@@ -15,7 +15,7 @@ PS> wsl --install -d Ubuntu-24.04
 ou de uninstall com o comando
 
 ```powershell
-PS> wsl --uninstall -d Ubuntu-24.04
+PS> wsl --unregister Ubuntu-24.04
 ```
 
 # Configurando o shell
