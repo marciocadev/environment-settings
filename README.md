@@ -110,6 +110,27 @@ sudo usermod -aG docker $USER
 
 Agora simplesmente feche o console e abra novamente e seu usuário terá permissão para utilizar o docker sem o comando `sudo`
 
+# Instalando Kubernetes
+
+Vamos utilizar o [Kind](https://kind.sigs.k8s.io/) para trabalhar com kubernetes
+
+Para isso baixe o executável a partir do github
+```shell
+curl -L -O https://github.com/kubernetes-sigs/kind/releases/download/v0.25.0/kind-linux-amd64
+```
+Mova para a pasta abaixo
+```shell
+sudo mv kind-linux-amd64 /usr/local/bin/kind
+```
+De a permissão para ser executado por todos
+```shell
+sudo chmod +x /usr/local/bin/kind
+```
+Procure uma versão do kindest/node no Docker Hub e crie o cluster
+```shell
+kind create cluster --name test --image kindest/node:v1.31.1
+```
+
 # Client AWS
 Instale o `aws-cli`
 
