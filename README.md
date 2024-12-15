@@ -38,6 +38,11 @@ Iniciar as instâncias
 wsl
 ```
 
+Se o wsl travar
+```powershell
+taskkill /f /im wslservice.exe
+```
+
 # Dependencias úteis
 
 ```shell
@@ -129,6 +134,33 @@ sudo chmod +x /usr/local/bin/kind
 Procure uma versão do kindest/node no Docker Hub e crie o cluster
 ```shell
 kind create cluster --name test --image kindest/node:v1.31.1
+```
+
+# Instalando Kubectl
+```shell
+curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+
+sudo mv kubectl /usr/local/bin/kubectl
+
+chmod +x /usr/local/bin/kubectl
+
+kubectl version
+
+kbectl vonfig view
+
+kubectl config current-context
+
+kubectl config use-context kind-test
+
+kubectl get nodes
+kubectl get namespaces // kubectl get namespaces
+kubectl get pods
+kubectl get services
+kubectl get configmaps
+kubectl get secrets
+kubectl get ingress
+
+kubectl create ns example-apps
 ```
 
 # Client AWS
